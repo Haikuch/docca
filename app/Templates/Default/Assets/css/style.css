@@ -1,0 +1,601 @@
+t/* Your styles here */
+
+* 
+{
+    font-size: 10pt !important;
+    font-family: verdana !important;
+}
+
+*, ::before, ::after { 
+ 
+    box-sizing: inherit; 
+}
+
+body 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+a:link  { color: black; text-decoration: none; }
+a:hover { color: blue; text-decoration: none; }
+
+#menu 
+{
+    background: #503264;
+    color: #C0C0C0;
+    height: 50px;
+    padding: 7px;
+}
+
+#menu a 
+{
+    margin-right: 10px;
+    color: #C0C0C0;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#menu a:hoverX {
+    
+    background: black;
+    border-radius: 3px;
+}
+
+#title 
+{
+    float: right;
+    font-size: 25pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+.container 
+{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* TABLES */
+.table 
+{
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;    
+    
+    /*dont know why this is neccessary*/
+    font-size: 10pt !important;
+    font-family: verdana !important;
+}
+
+.table > .row
+{
+    display: table-row;
+}
+
+.table > .row > .cell
+{
+    display: table-cell;
+}
+
+/* FORMS */
+input, textarea
+{
+    border: 1px solid grey;
+    width: 100%;
+    border-radius: 2px;
+}
+
+[type=submit] {
+    
+    border-color: #808080;
+    width: inherit;
+    background: #d8f57f;
+}
+
+[type=submit][name=remove] {
+    
+    margin-right: 5px;
+    background: #ff7777;
+}
+
+[name=comment] {
+    
+    font-style: italic;
+}
+
+/* Document list */
+#docslist 
+{
+    font-size: 10pt; /*unklar warum das notwendig nochmal*/
+    font-family: verdana;
+}
+
+#docslist .noresult {
+    
+    padding: 20px;
+    text-align: center;
+    display: blocK;
+    width: 100%;
+}
+
+#docslist .head 
+{
+    font-weight: bold;
+    border: 0px !important;
+}
+
+#docslist .head img
+{
+    position: relative;
+    top: 4px;
+}
+
+#docslist .head:hover
+{
+    background: inherit;
+    cursor: inherit;
+}
+
+#docslist .head div:last-child
+{
+    text-align: center;
+}
+
+#docslist.table > div 
+{
+    border: 1px solid black;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+#docslist.table > div:hover:not(.head)
+{
+    background: #fbfffa;
+    cursor: default;
+}
+
+#docslist.table > div > div
+{
+    padding: 10px;
+}
+
+#docslist .name .marked {
+    
+    background: #8b93ff;
+}
+
+#docslist .tags, #docslist .tags a 
+{
+    font-size: 8pt !important;
+}
+
+#docslist .tags a.marked
+{
+    background: #ffca0c;
+}
+
+#docslist .comment 
+{
+    font-style: italic;
+    font-size: 8pt;
+}
+
+#docslist .comment .marked {
+    
+    background: #a1d793;
+    font-size: inherit;
+}
+
+#docslist .actions 
+{
+    text-align: center;
+    padding: 0px !important;
+}
+
+#docslist .actions img
+{
+    display: none;
+}
+
+/* Document add */
+.single.table 
+{
+    width: 50%;
+}
+
+.single .cell
+{
+    padding: 10px;
+    border: 1px solid #e3e3e3;
+    vertical-align: top;
+}
+
+.single .row:first-child .cell {
+    
+    border-top: 0px;
+}
+
+.single .cell:first-child {
+    
+    border-left: 0px;
+}
+
+.single .cell:last-child {
+    
+    border-right: 0px;
+}
+
+.single .row:last-child .cell {
+    
+    border-bottom: 0px;
+}
+
+.single [name=title] {
+    
+    border-width: 2px;
+}
+
+.single .caption {
+    
+    display: table-caption;
+    letter-spacing: 3px;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 1px solid #e3e3e3; 
+}
+
+/* VIEW */
+#docview {
+    
+    width: 100%;
+}
+
+#docview .data {
+    
+    width: 50%;
+    float: left;
+}
+
+#docview .options {
+    
+    width: 50%;
+    float: right;
+}
+
+#docview .options a {
+    
+    float: right;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    clear: both;
+    border: 1px dotted #C0C0C0;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 10pt;
+    background: #f8f8f8;
+}
+
+#docview .options a:hover {
+    
+    background: #fff6ae;
+}
+
+#docview .attributes .table .cell {
+    
+    border-width: 0px;
+    padding: 3px;
+}
+
+#docview .attributes .table .row .cell:first-child {
+    
+    border-right-width: 1px;
+    padding-right: 10px;
+}
+
+#docview .attributes .table .row .cell:last-child {
+    
+    padding-left: 10px;
+}
+
+
+#docview .files .file {
+
+    Xclear: both;
+    xpadding: 3px;
+    xoverflow: auto;
+    xmax-width: 100%;
+}
+
+#docview .files .file:hover {
+
+    xbackground: #eefff3;
+}
+
+#docview .files .thumb {
+    
+    margin-right: 5px;
+    position: relative;
+    float: left;
+}
+
+#docview .files .thumb img {
+    
+    border: 1px solid #C0C0C0;
+}
+
+#docview .files .thumb img:hover {
+    
+    border: 1px solid #0000cc;
+}
+
+
+#docview .row .cell {
+    
+    white-space: nowrap;
+}
+
+#viewcontainer {
+    
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    position: relative;
+}
+
+#meta {
+    
+    padding: 5px;
+    color: #503264;
+}
+
+#files a {
+    
+    display: inline-block;
+    width: 99%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 1px;
+    border: 1px dotted #C0C0C0;
+    background: #fffcf9;   
+    margin-bottom: 8px;
+}
+
+#tags {
+    
+    width: 99%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 1px;
+    border: 1px solid #C0C0C0;
+    background: #f2f8ff;
+}
+
+/* EDIT */
+#docform .files:last-of-type {
+    
+    margin-bottom: 20px;
+}
+
+#docform .files .file-delete {
+    
+     color: green; 
+     font-weight: bold;
+     display: inline-block;
+     width: 15px;
+     height:20px;
+}
+
+#docform .files .file-activate {
+    
+    color: red;
+    font-weight: bold;
+    display: none;
+    width: 15px;
+    height:20px;
+}
+
+#docform .files .file-delete:hover, .file-activate:hover {
+    
+    cursor: pointer;
+}
+
+#docform .files a.file-deleted {
+    
+    text-decoration: line-through;
+    color: red;
+}
+
+#docform .files a.hover-delete {
+    
+    text-decoration: line-through;
+    color: red;
+}
+
+#docform [type=submit] {
+    
+    float: right;
+}
+
+#docform .attributes .attribute div {
+    
+    padding: 5px;
+}
+
+#docform .attributes .attribute select {
+    
+    border: 1px solid grey;
+    width: 250px;
+    background: white;
+    border-radius: 2px;
+}
+
+#docform .attributes .attribute select option[value=none] {
+    
+    font-style: italic;
+}
+
+#docform .row .cell {
+    
+    white-space: nowrap;
+}
+
+#docform .attributes .table .cell {
+    
+    border: none;
+}
+
+
+/* SEARCHBAR */
+#filterbar {
+    
+    padding: 5px;
+    background: #e8f8e2;
+    overflow: hidden
+}
+#filterbar .filter {
+    
+    margin-bottom: 5px;
+}
+
+#filterbar .filter img.addfilter {
+    
+    visibility: hidden;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+#filterbar .filter img.removefilter {
+    
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+#filterbar .filter:only-of-type img.removefilter {
+    
+    display: none;
+}
+
+#filterbar .filter:last-of-type img.addfilter {
+    
+    visibility: visible;
+}
+
+#filterbar select {
+    
+    border: 1px solid grey;
+    width: 250px;
+    background: white;
+    border-radius: 2px;
+}
+
+#filterbar select option[value=none] {
+    
+    font-style: italic;
+}
+
+#filterbar .filter input {
+    
+    width: 70%;
+    margin-left: 0px;
+}
+
+#filterbar .filter input.active {
+    
+    display: inline;
+}
+
+#filterbar [type=submit] {
+    
+    background: #ffca0c;
+    margin-top: 10px;
+    font-size: 8pt;
+    width: 100px;
+}
+
+#filterbar-clones {
+    
+    display: none;
+}
+
+#filterbar [filtername=sourcetime] input {
+    
+    width: 100px;
+}
+
+
+
+#attributes-index input.name {
+    
+    width: 200px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#attributes-index input.values {
+    
+    width: 50%;
+}
+
+
+#docview .files .preview {
+    
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+    border: 1px solid black;
+}
+
+#file-options {
+    
+    display: none;
+    position: absolute;
+    bottom: 23px;
+    left: 0px;
+    font-family: verdana;
+    font-size: 10pt;
+}
+
+#file-options .download {
+    
+    background: #cdffb7;
+    padding: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#file-options .download .title {
+    
+    position: relative;
+    top: -10px;
+    left: -10px;
+    font-size: 8pt;
+    color: #808080;
+    font-weight: bold;
+}
+
+#file-options .download a.active {
+    
+    text-decoration: underline;
+}
+
+#docview #haze {
+    
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    display: none;
+}

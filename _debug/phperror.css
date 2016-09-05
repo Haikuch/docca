@@ -1,0 +1,43 @@
+    
+.phperror {
+
+    background: #F4D95F;
+    border: solid 1px orange;
+    margin-bottom: 5px;
+    z-index: 999;
+
+}
+
+span.file {
+    font-size: 8pt;
+    font-weight:bold;     
+    color: blue;
+}
+
+.message1 {
+    
+    color: #C03;
+    font-weight: bold;
+    font-size: 8pt;
+    font-family: monospace;
+    
+}
+
+.message2 {
+    
+    /*color: #C03;*/
+    font-weight: bold;
+    font-family: monospace;
+    
+}
+
+.context {
+    
+    /*color: #C03;*/
+    font-family: monospace;
+    
+}
+        
+
+
+
